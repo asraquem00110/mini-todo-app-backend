@@ -1,0 +1,10 @@
+node_modules/
+dist/
+
+*-lock.json
+*-lock.yaml
+*.lock
+
+.env
+.env.*
+.env-*

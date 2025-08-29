@@ -1,0 +1,15 @@
+{
+  "version": "0.2",
+  "language": "en",
+  "words": ["datetime", "healthcheck"],
+  "ignorePaths": [
+    "./node_modules",
+    "./dist",
+    "*.config.js",
+    "*.config.ts",
+    "*.config.cjs",
+    "./package.json",
+    "./pnpm-lock.yaml",
+    "./docker-compose.yaml"
+  ]
+}

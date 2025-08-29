@@ -33,6 +33,7 @@
     "@commitlint/config-conventional": "^19.8.1",
     "@eslint/js": "^9.34.0",
     "@types/cookie-parser": "^1.4.9",
+    "@types/cors": "^2.8.19",
     "@types/express": "^5.0.3",
     "@types/hpp": "^0.2.6",
     "@types/node": "^24.3.0",
@@ -53,6 +54,7 @@
   },
   "dependencies": {
     "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
     "dotenv": "^17.2.1",
     "express": "^5.1.0",
     "express-session": "^1.18.2",

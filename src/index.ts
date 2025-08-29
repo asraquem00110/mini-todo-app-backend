@@ -6,12 +6,19 @@ import { createServer as createHttpServer } from 'http';
 import { createServer as createHttpsServer } from 'https';
 import { envConfig, isHttps } from './env';
 import fs from 'fs';
+import cors from 'cors';
 import { logger } from './utils/logger';
 import { errorHandlerMiddleware } from './middlewares/error-handler';
 import { routes, type AppRoutes } from './controllers/routes';
 import { loggerHandlerMiddleware } from './middlewares/logger-middleware';
 
 const app: Application = express();
+
+app.use(
+  cors({
+    origin: 'http://localhost:5173',
+  })
+);
 
 app.use(cookieParser());
 app.use(express.json());
